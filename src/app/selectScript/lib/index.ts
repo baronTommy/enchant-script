@@ -18,7 +18,11 @@ const makeScriptsChoices = (scriptList: Set<EnchantScriptsP>) => {
   for (const [key, value] of scriptList.entries()) {
     choices.push({
       title: value.opt.name,
-      description: value.script[0],
+      description: `[script]
+> ${value.script[0]}
+
+[description]
+> ${value.opt.description}`,
       value: key,
     });
   }
