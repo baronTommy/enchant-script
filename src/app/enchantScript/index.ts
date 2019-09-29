@@ -15,16 +15,16 @@ type EnchantScripts = (
   p: EnchantScriptsP
 ) => Promise<ReturnType<typeof execa.command>>;
 
-type Opt<T = {}> = {
+type Opt<T> = {
   name: string;
   description: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   custom?: T;
 };
 
-export type EnchantScriptsP = {
+export type EnchantScriptsP<T = {}> = {
   script: ExecaScriptParms;
-  opt: Opt;
+  opt: Opt<T>;
   spinnerName?: SpinnerName;
   beforAction?: lifeCycleActioh;
   successAction?: lifeCycleActioh;
