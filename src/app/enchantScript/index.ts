@@ -12,7 +12,7 @@ type SpinnerName = Parameters<typeof cliSpinner>[0];
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type lifeCycleActioh = (...p: any[]) => any;
 type EnchantScripts = (
-  p: EnchantScriptsP
+  p: EnchantScriptsP<{}>
 ) => Promise<ReturnType<typeof execa.command>>;
 
 type Opt<T> = {

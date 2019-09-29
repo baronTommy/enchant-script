@@ -14,7 +14,7 @@ import {
 import { selectScript as _selectScript } from './app/selectScript';
 import { getRandomSpinnersName as _getRandomSpinnersName } from './app/cliSpinner';
 
-export type EnchantScriptsP = _EnchantScriptsP;
+export type EnchantScriptsP<T = {}> = _EnchantScriptsP<T>;
 export const selectScript = _selectScript;
 export const runInOrder = _runInOrder;
 export const runAll = _runAll;

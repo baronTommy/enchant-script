@@ -1,12 +1,19 @@
 const { selectScript, consoleReport, betterOption } = require('../dist')
+import { EnchantScriptsP } from '../src'
 
-const scripts = new Set();
+type Custom = {
+  tags: [string, ...string[]]
+}
+const scripts = new Set<EnchantScriptsP<Custom>>();
 scripts.add({
   script: ['sleep 3'],
   ...betterOption,
   opt: {
     name: 'sleep',
     description: 'zzz...',
+  },
+  custom: {
+    tags: ['optimization'],
   },
 });
 

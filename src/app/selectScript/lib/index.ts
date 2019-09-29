@@ -1,10 +1,6 @@
 import prompts from 'prompts';
-import {
-  EnchantScriptsP,
-  runInOrder,
-  runAll,
-  tryRunInOrder,
-} from '../../enchantScript';
+import { runInOrder, runAll, tryRunInOrder } from '../../enchantScript';
+import { EnchantScriptsP } from '../../..';
 
 type CommandsV = {
   f: Function;
