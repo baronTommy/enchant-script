@@ -1,4 +1,4 @@
-import { EnchantScriptsP } from '../..';
+import { EnchantScriptsP } from '../../../';
 import { init } from '.';
 
 export const scripts = new Set<EnchantScriptsP>();

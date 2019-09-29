@@ -4,6 +4,14 @@
   "main": "dist/index.js",
   "module": "dist/enchant-script.esm.js",
   "typings": "dist/index.d.ts",
+  "author": {
+    "name": "tommy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baronTommy/enchant-script"
+  },
+  "license": "MIT",
   "files": [
     "dist"
   ],

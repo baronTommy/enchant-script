@@ -43,11 +43,17 @@ const makeCommandChoices = (commands: Map<string, CommandsV>) => {
 const getCommands = (): Map<string, CommandsV> => {
   const commands = new Map<string, CommandsV>();
 
-  commands.set('runInOrder', { f: runInOrder, description: '順番に実行' });
-  commands.set('runAll', { f: runAll, description: '並列に実行' });
+  commands.set('runInOrder', {
+    f: runInOrder,
+    description: 'Execute selected scripts in order',
+  });
+  commands.set('runAll', {
+    f: runAll,
+    description: 'Run selected scripts in parallel',
+  });
   commands.set('tryRunInOrder', {
     f: tryRunInOrder,
-    description: '順番に実行するが エラーが有ったら止まる',
+    description: 'Stop when an error occurs (runInOrder)',
   });
   return commands;
 };
@@ -56,7 +62,7 @@ const scriptsChoices = async (scriptList: Set<EnchantScriptsP>) =>
   (await prompts({
     type: 'multiselect',
     name: 'selected',
-    message: '実行コマンドの選択',
+    message: 'Select execution script',
     choices: makeScriptsChoices(scriptList),
   })).selected;
 
@@ -64,7 +70,7 @@ const commandChoices = async (commands: Map<string, CommandsV>) =>
   (await prompts({
     type: 'select',
     name: 'selected',
-    message: '実行コマンドの形式',
+    message: 'Select execution command',
     choices: makeCommandChoices(commands),
   })).selected;
 
