@@ -1,6 +1,6 @@
 {
   "name": "enchant-script",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "module": "dist/enchant-script.esm.js",
   "typings": "dist/index.d.ts",
@@ -25,7 +25,8 @@
     "start": "tsdx watch",
     "build": "tsdx build && find dist -name '*.test.*' | xargs rm -rf",
     "test": "tsdx test",
-    "lint": "tsdx lint src --fix"
+    "lint": "tsdx lint src --fix",
+    "zzz": "ts-node scripts"
   },
   "peerDependencies": {},
   "husky": {
@@ -42,6 +43,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "husky": "^3.0.7",
+    "ts-node": "^8.4.1",
     "tsdx": "^0.9.2",
     "tslib": "^1.10.0",
     "typescript": "^3.6.3"

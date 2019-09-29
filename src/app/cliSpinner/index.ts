@@ -13,9 +13,10 @@ export const cliSpinner = (p: cliSpinners.SpinnerName, length: number) => {
 
     // eslint-disable-next-line no-magic-numbers
     i += 1;
-    [...Array(length)].map(() =>
-      process.stdout.write(`${frames[i % frames.length]}`)
-    );
+
+    for (var j = 0; j < length; j++) {
+      process.stdout.write(`${frames[i % frames.length]}`);
+    }
   }, spinner.interval);
 };
 

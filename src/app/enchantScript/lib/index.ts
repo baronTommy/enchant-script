@@ -1,7 +1,11 @@
 import path from 'path';
 
 // eslint-disable-next-line
-export const bL = (cnt = 1) => [...Array(cnt)].map(() => console.log(''));
+export const bL = (cnt = 1) => {
+  for (var j = 0; j < cnt; j++) {
+    console.log('');
+  }
+};
 
 export const notificationOpt = ({
   message,

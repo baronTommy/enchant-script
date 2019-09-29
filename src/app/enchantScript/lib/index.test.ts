@@ -3,7 +3,7 @@ import { bL, CustomError } from '.';
 describe('bL', () => {
   it('1', () => {
     const r = bL();
-    expect(r).toBeDefined();
+    expect(r).toBeUndefined();
   });
 });
 
