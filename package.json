@@ -11,6 +11,12 @@
     "type": "git",
     "url": "https://github.com/baronTommy/enchant-script"
   },
+  "keywords": [
+    "cli",
+    "script",
+    "node-notifier",
+    "interactive"
+  ],
   "license": "MIT",
   "files": [
     "dist"
