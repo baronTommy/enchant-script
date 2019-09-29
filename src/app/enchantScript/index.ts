@@ -56,6 +56,7 @@ export const enchantScript: EnchantScripts = async ({
   const h = cliSpinner(spinnerName, spinnerCount);
 
   try {
+    bL();
     const r = await execa.command(p1, { ...p2, stdio: 'inherit' });
     bL();
     successAction();

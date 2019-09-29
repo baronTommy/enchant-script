@@ -1,9 +1,12 @@
 # enchant-script
 
+```bash
+yarn add -D enchant-script
+```
 
 ```bash
 # yarn tsc --init
-yarn add -D ts-node typescript enchant-script
+yarn add -D ts-node typescript
 ```
 
 ```json
