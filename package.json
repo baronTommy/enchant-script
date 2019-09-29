@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build && find dist -name '*.test.*' | xargs rm -rf",
     "test": "tsdx test",
     "lint": "tsdx lint src --fix"
   },
