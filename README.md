@@ -1,4 +1,5 @@
 # enchant-script
+[![enchant-script](https://nodei.co/npm/enchant-script.png)](https://www.npmjs.com/package/enchant-script)
 
 [![asciicast](https://asciinema.org/a/Y3j9RauSM8JrLgpWfzWXgk2Rm.svg)](https://asciinema.org/a/Y3j9RauSM8JrLgpWfzWXgk2Rm)
 
